@@ -1,0 +1,17 @@
+unset arrow
+unset log
+unset label
+unset title
+set title "Wykres przebiegu funkcji f(x)=x^2-5"
+set ylabel "y"
+set xlabel "x"
+set grid
+set key inside
+set key box
+set key left top
+set contour
+set grid
+set errorbars large
+set output "fun1.jpg"
+set terminal jpeg
+plot x**2-5 title "f(x)" linecolor "red" linewidth 1

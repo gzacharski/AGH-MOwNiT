@@ -1,0 +1,18 @@
+unset arrow
+unset log
+unset label
+unset title
+set title "Wykres przebiegu funkcji f(x)=x^2-2x+1"
+set ylabel "y"
+set xlabel "x"
+set yrange [-10:40]
+set grid
+set key inside
+set key box
+set key left top
+set contour
+set grid
+set errorbars large
+set output "fun2.jpg"
+set terminal jpeg
+plot x**2-2*x+1 title "f(x)" linecolor "red" linewidth 1
