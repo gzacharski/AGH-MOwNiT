@@ -1,0 +1,17 @@
+unset arrow
+unset log
+unset label
+unset title
+set title "Wykres zależności czasu dekompozycji od rozmiaru układu równań"
+set ylabel "czas dekompozycji [s]"
+set xlabel "rozmiar układu równań"
+set grid
+set key inside
+set key box
+set key left top
+set contour
+set grid
+set errorbars large
+set output "decomp_times.jpg"
+set terminal jpeg
+plot "decomp_times.txt" title "f(x)" linecolor "red" linewidth 1
